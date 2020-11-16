@@ -77,5 +77,28 @@ export const MovieState = () => {
         },
       ],
     },
+    {
+      title: "H-store",
+      mainImg: theracer,
+      url: "/work/h-store",
+      secondaryImg: theracer2,
+      awards: [
+        {
+          title: "Truly A masterpiece",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Fresh look on a brutal sport.",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "It’s okay lmao.",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+      ],
+    },
   ];
 };

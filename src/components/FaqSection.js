@@ -10,49 +10,50 @@ const FaqSection = () => {
     const [element, controls] = useScroll()
     return(
         <Faq variants={fade} ref={element} animate={controls} initial="hidden">
-            <h2>Any Questions<span>FAQ</span></h2>
+            <h2>About Me<span>FAQ</span></h2>
             <AnimateSharedLayout>
 
-            <Toggle title="How Do I Start?">
+            <Toggle title="Who are you?">
 
                 
                     
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
+                        <p>My name is Kristóf Vörösváczki.</p>
+                        <p>Im coming from Hungary, but I lived in Sweden in the past 7 years.</p>
                     </div>
 
                 
             </Toggle>
-            <Toggle title="Daily Shcedule">
+            <Toggle title="What do you do for living?">
 
                
                     
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
+                        <p>Right now I'm a full time student at Medieinstitutet Gothenburg.</p>
+                        <p>This is my second year as a Front-End Developer student. </p>
                     </div>
 
                
             </Toggle>
-            <Toggle title="Payment Methods">
+            <Toggle title="What languages do you speak?">
 
                 
                     
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
+                        <p>Hungarian is my mother language, besides that I speak fluent Swedish and English.</p>
+                        
                     </div>
 
                
             </Toggle>
-            <Toggle title="Products">
+            <Toggle title="What are your hobbies?">
 
               
                     
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
+                        <p>I like to do different sports depending on the season, such as ride mountainbike or ride snowboard. Tennis is the all season sport for me.</p>
+                        <p>Beside these activities I like to travel and I'm a big animal lover.</p>
+                        
                     </div>
 
                 

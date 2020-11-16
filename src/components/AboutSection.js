@@ -1,4 +1,5 @@
 import Home1 from '../img/home1.png'
+import Me from '../img/meimg.JPG'
 import { About, Description, Image, Hide } from '../styles'
 
 //framer motion
@@ -23,20 +24,20 @@ const AboutSection = () => {
             <Description>
                 <motion.div>
                     <Hide>
-                        <motion.h2 variants={titleAnim}>My goal is to make</motion.h2>
+                        <motion.h2 variants={titleAnim}>My goal is to</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnim} >your<span>dreams</span> come</motion.h2>
+                        <motion.h2 variants={titleAnim} >make<span>beautiful</span></motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnim}>true.</motion.h2>
+                        <motion.h2 variants={titleAnim}>websites.</motion.h2>
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>Contact me for more information</motion.p>
                 <motion.button variants={fade}>Contact me</motion.button>
             </Description>
             <Image>
-                <motion.img variants={photoAnim}  src={Home1} alt="cameraman"></motion.img>
+                <motion.img variants={photoAnim}  src={Me} alt="cameraman"></motion.img>
             </Image>
             <Wave/>
         </About>

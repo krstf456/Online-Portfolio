@@ -1,7 +1,10 @@
 import clock from '../img/clock.svg'
 import diagraph from '../img/diaphragm.svg'
-import money from '../img/money.svg'
+import js from '../img/javascript.svg'
+import adobe from '../img/adobecreativecloud.svg'
 import teamwork from '../img/teamwork.svg'
+import react from '../img/react.svg'
+import node from '../img/node-dot-js.svg'
 import Home2 from '../img/home2.png'
 import styled from 'styled-components'
 //styles
@@ -9,37 +12,37 @@ import { About, Description, Hide, Image } from "../styles"
 import {fade, scrollReveal} from '../animation'
 import {useScroll} from './useScroll'
 
-const ServicesSection = () => {
+const SkillsSection = () => {
     const[element, controls] = useScroll()
     return(
         <Services variants={fade} animate={controls} initial="hidden" ref={element}>
             <Description>
-                <h2>High<span>quality</span>services</h2>
+                <h2>Few<span>skills</span>of mine</h2>
                 <Cards>
                     <Card>
                         <div className="icon">
-                            <img src={clock} alt="clock"/>
-                            <h3>Efficient</h3>
+                            <img src={react} alt="clock"/>
+                            <h3>React</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={teamwork} alt="teamwork"/>
-                            <h3>Teamwork</h3>
+                            <img src={node} alt="teamwork"/>
+                            <h3>NodeJS</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={diagraph} alt="dia"/>
-                            <h3>Diapghram</h3>
+                            <img src={js} alt="dia" style={{color: 'red'}}/>
+                            <h3>JavaScript</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={money} alt="money"/>
+                            <img src={adobe} alt="money"/>
                             <h3>Affordable</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
@@ -87,4 +90,4 @@ const Card = styled.div`
 `
 
 
-export default ServicesSection
+export default SkillsSection

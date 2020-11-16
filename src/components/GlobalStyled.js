@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1rem;
     }
     span{
+        margin: 0rem 0.4rem;
         font-weight: bold;
         color: #23d997;
     }
