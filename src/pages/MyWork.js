@@ -14,7 +14,7 @@ const MyWork = () => {
                 <div className="line">
 
                 </div>
-                <Link>
+                <Link to="/work/the-athlete">
                     <img src={athlete} alt="athlete"/>
                 </Link>
             
@@ -24,7 +24,7 @@ const MyWork = () => {
                 <div className="line">
 
                 </div>
-                <Link>
+                <Link to="/work/the-racer">
                     <img src={theracer} alt="athlete"/>
                 </Link>
             
@@ -34,7 +34,7 @@ const MyWork = () => {
                 <div className="line">
 
                 </div>
-                <Link>
+                <Link to="/work/good-times">
                     <img src={goodtimes} alt="athlete"/>
                 </Link>
             
@@ -47,7 +47,7 @@ const Work = styled.div`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
-    background: white;
+    
     h2{
         padding: 1rem 0rem;
     }

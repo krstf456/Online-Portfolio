@@ -3,7 +3,7 @@ import AboutMe from './pages/AboutMe';
 import Nav from './components/Nav'
 import ContactMe from './pages/ContactMe'
 import MyWork from './pages/MyWork'
-
+import MovieDetail from './pages/MovieDetail'
 //Rouyter
 import { Switch, Route } from 'react-router-dom'
 function App() {
@@ -16,8 +16,12 @@ function App() {
       <Route path="/" exact>
         <AboutMe/>
       </Route>
-      <Route path="/work">
+      <Route path="/work" exact>
         <MyWork/>
+
+      </Route>
+      <Route path="/work/:id">
+        <MovieDetail/>
 
       </Route>
       <Route path="/contact">
