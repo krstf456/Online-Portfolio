@@ -4,6 +4,7 @@ import { About, Description, Image, Hide } from '../styles'
 //framer motion
 
 import {motion} from 'framer-motion'
+import {titleAnim, fade, photoAnim} from '../animation'
 
 const AboutSection = () => {
 
@@ -19,22 +20,22 @@ const AboutSection = () => {
     return(
         <About>
             <Description>
-                <motion.div className="title">
+                <motion.div>
                     <Hide>
-                        <motion.h2>My goal is to make</motion.h2>
+                        <motion.h2 variants={titleAnim}>My goal is to make</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2>your<span>dreams</span> come</motion.h2>
+                        <motion.h2 variants={titleAnim} >your<span>dreams</span> come</motion.h2>
                     </Hide>
                     <Hide>
                         <motion.h2>true.</motion.h2>
                     </Hide>
                 </motion.div>
-                <p>Contact me for more information</p>
-                <button>Contact me</button>
+                <motion.p variants={fade}>Contact me for more information</motion.p>
+                <motion.button variants={fade}>Contact me</motion.button>
             </Description>
             <Image>
-                <img src={Home1} alt="cameraman"></img>
+                <motion.img variants={photoAnim} src={Home1} alt="cameraman"></motion.img>
             </Image>
         </About>
     )
