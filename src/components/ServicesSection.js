@@ -6,7 +6,7 @@ import Home2 from '../img/home2.png'
 import styled from 'styled-components'
 //styles
 import { About, Description, Hide, Image } from "../styles"
-import {fade} from '../animation'
+import {fade, scrollReveal} from '../animation'
 import {useScroll} from './useScroll'
 
 const ServicesSection = () => {

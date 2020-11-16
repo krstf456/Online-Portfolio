@@ -10,12 +10,14 @@ import { Switch, Route, useLocation } from 'react-router-dom'
 //animate 
 import {AnimatePresence} from 'framer-motion'
 
+
 function App() {
   const location = useLocation()
 
   return (
     <div className="App">
       <GlobalStyle/>
+      
       <Nav/>
       <AnimatePresence exitBeforeEnter>
 

@@ -7,8 +7,12 @@ import goodtimes from '../img/goodtimes-small.png'
 
 import {motion} from 'framer-motion'
 import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from '../animation'
+import {useScroll} from '../components/useScroll'
+import ScrollTop from '../components/ScrollTop'
 
 const MyWork = () => {
+    const [element, controls] = useScroll()
+    const [element2, controls2] = useScroll()
     return(
         <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{background: '#fff'}}>
             <motion.div variants={sliderContainer}>
@@ -31,26 +35,27 @@ const MyWork = () => {
                 </Link>
             
             </Movie>
-            <Movie>
-                <motion.h2  variant={fade}>The Racer</motion.h2>
-                <div className="line">
+            <Movie ref={element} variants={fade} animate={controls} initial="hidden">
+                <motion.h2  variants={fade}>The Racer</motion.h2>
+                <motion.div variants={lineAnim} className="line">
 
-                </div>
+                </motion.div>
                 <Link to="/work/the-racer">
                     <img src={theracer} alt="athlete"/>
                 </Link>
             
             </Movie>
-            <Movie>
+            <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
                 <motion.h2 variant={fade}>Good Times</motion.h2>
-                <div className="line">
+                <motion.div variants={lineAnim} className="line">
 
-                </div>
+                </motion.div>
                 <Link to="/work/good-times">
                     <img src={goodtimes} alt="athlete"/>
                 </Link>
             
             </Movie>
+            <ScrollTop/>
         </Work>
     )
 }
@@ -65,7 +70,7 @@ const Work = styled(motion.div)`
     }
 `
 
-const Movie = styled.div`
+const Movie = styled(motion.div)`
     padding-bottom: 10rem;
     .line{
         height: 0.5rem;
