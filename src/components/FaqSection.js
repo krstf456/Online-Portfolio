@@ -2,51 +2,62 @@
 import { About, Description, Hide, Image } from "../styles"
 import styled from 'styled-components'
 import Toggle from './Toggle'
+import {AnimateSharedLayout} from 'framer-motion'
+import { useScroll } from './useScroll'
+import { scrollReveal, fade } from '../animation'
 
 const FaqSection = () => {
-    
+    const [element, controls] = useScroll()
     return(
-        <Faq>
+        <Faq variants={fade} ref={element} animate={controls} initial="hidden">
             <h2>Any Questions<span>FAQ</span></h2>
-            <Toggle>
+            <AnimateSharedLayout>
 
-            <div className="question">
-                <h4>How Do I Start?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
-                </div>
-                <div className="faq-line"></div>
+            <Toggle title="How Do I Start?">
 
-            </div>
+                
+                    
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
+                    </div>
+
+                
             </Toggle>
-            <div className="question">
-                <h4>Daily Shcedule</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
-                </div>
-                <div className="faq-line"></div>
+            <Toggle title="Daily Shcedule">
 
-            </div>
-            <div className="question">
-                <h4>Payment Methods</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
-                </div>
-                <div className="faq-line"></div>
+               
+                    
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
+                    </div>
 
-            </div>
-            <div className="question">
-                <h4>Products</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
-                </div>
-                <div className="faq-line"></div>
+               
+            </Toggle>
+            <Toggle title="Payment Methods">
 
-            </div>
+                
+                    
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
+                    </div>
+
+               
+            </Toggle>
+            <Toggle title="Products">
+
+              
+                    
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
+                    </div>
+
+                
+            </Toggle>
+        </AnimateSharedLayout>
         </Faq>
     )
 }
