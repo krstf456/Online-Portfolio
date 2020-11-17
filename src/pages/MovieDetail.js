@@ -24,7 +24,7 @@ const MovieDetail = () => {
             <Details  variants={pageAnimation} initial="hidden" animate="show" exit="exit">
                 <Headline>
                     <h2>{movie.title}</h2>
-                    <img src={movie.mainImg} alt="picture"/>
+                    <img src={movie.mainImg} alt="hstore picture"/>
                 </Headline>
                 <Awards>
                     {movie.awards.map((award) => (
@@ -32,7 +32,7 @@ const MovieDetail = () => {
                     ))}
                 </Awards>
                 <ImageDisplay>
-                    <img src={movie.secondaryImg} alt="picture two"/>
+                    <img src={movie.secondaryImg} alt="hstore picture"/>
                 </ImageDisplay>
             </Details>
         )}

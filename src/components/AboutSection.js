@@ -37,7 +37,7 @@ const AboutSection = () => {
                 <Link to='/contact'><motion.button variants={fade} >Contact me</motion.button></Link>
             </Description>
             <Image>
-                <motion.img variants={photoAnim}  src={Me} alt="cameraman"></motion.img>
+                <motion.img variants={photoAnim}  src={Me} alt="picture about me"></motion.img>
             </Image>
             <Wave/>
         </About>

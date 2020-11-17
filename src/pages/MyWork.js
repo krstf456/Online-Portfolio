@@ -9,8 +9,8 @@ import {useScroll} from '../components/useScroll'
 import ScrollTop from '../components/ScrollTop'
 
 const MyWork = () => {
-    const [element, controls] = useScroll()
-    const [element2, controls2] = useScroll()
+    // const [element, controls] = useScroll()
+    // const [element2, controls2] = useScroll()
     return(
         <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{background: '#fff'}}>
             <motion.div variants={sliderContainer}>
@@ -28,7 +28,7 @@ const MyWork = () => {
                 </motion.div>
                 <Link to="/work/h-store">
                     <Hide>
-                    <motion.img variants={photoAnim} src={hstore} alt="athlete"/>
+                    <motion.img variants={photoAnim} src={hstore} alt="hstore picture"/>
                     </Hide>
                 </Link>
             

@@ -1,7 +1,5 @@
-import clock from '../img/clock.svg'
-import diagraph from '../img/diaphragm.svg'
+
 import js from '../img/javascript.svg'
-import adobe from '../img/adobecreativecloud.svg'
 import css from '../img/css3.svg'
 import html from '../img/html5.svg'
 import react from '../img/react.svg'
@@ -9,8 +7,8 @@ import node from '../img/node-dot-js.svg'
 import bill from '../img/bill.jpg'
 import styled from 'styled-components'
 //styles
-import { About, Description, Hide, Image } from "../styles"
-import {fade, scrollReveal} from '../animation'
+import { About, Description, Image } from "../styles"
+import { fade } from '../animation'
 import {useScroll} from './useScroll'
 
 const SkillsSection = () => {
@@ -23,35 +21,35 @@ const SkillsSection = () => {
                 <Cards>
                     <Card>
                         <div className="icon">
-                            <img src={react} alt="clock"/>
+                            <img src={react} alt="react icon"/>
                             <h3>React</h3>
                         </div>
                         <p>For Developing Applications</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={node} alt="teamwork"/>
+                            <img src={node} alt="node icon"/>
                             <h3>NodeJS</h3>
                         </div>
                         <p>For Databases</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={js} alt="dia"/>
+                            <img src={js} alt="js icon"/>
                             <h3>JavaScript</h3>
                         </div>
                         <p>For the funtional part of the Application</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={html} alt="money"/>
+                            <img src={html} alt="html icon"/>
                             <h3>HTML</h3>
                         </div>
                         <p>Structuring the websites</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={css} alt="clock"/>
+                            <img src={css} alt="css icon"/>
                             <h3>CSS:3</h3>
                         </div>
                         <p>Styling the websites</p>
@@ -59,7 +57,7 @@ const SkillsSection = () => {
                 </Cards>
             </Description>
             <Image>
-                <img src={bill} alt="camera"/>
+                <img src={bill} alt="keyboard"/>
             </Image>
         </Services>
     )

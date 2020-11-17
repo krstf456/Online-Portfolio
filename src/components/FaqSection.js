@@ -1,10 +1,10 @@
 
-import { About, Description, Hide, Image } from "../styles"
+import { About } from "../styles"
 import styled from 'styled-components'
 import Toggle from './Toggle'
 import {AnimateSharedLayout} from 'framer-motion'
 import { useScroll } from './useScroll'
-import { scrollReveal, fade } from '../animation'
+import { fade } from '../animation'
 
 const FaqSection = () => {
     const [element, controls] = useScroll()
