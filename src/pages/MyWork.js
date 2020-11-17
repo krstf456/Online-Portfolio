@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 //images
-import athlete from '../img/athlete-small.png'
-import theracer from '../img/theracer-small.png'
-import goodtimes from '../img/goodtimes-small.png'
+
 import hstore from '../img/mainhstore.png'
 import {motion} from 'framer-motion'
 import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from '../animation'
