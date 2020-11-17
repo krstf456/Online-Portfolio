@@ -40,7 +40,7 @@ const FaqSection = () => {
                 
                     
                     <div className="answer">
-                        <p>Hungarian is my mother language, besides that I speak fluent Swedish and English.</p>
+                        <p>Hungarian is my mother language, beside that I speak fluent Swedish and English.</p>
                         
                     </div>
 

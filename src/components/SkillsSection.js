@@ -2,10 +2,11 @@ import clock from '../img/clock.svg'
 import diagraph from '../img/diaphragm.svg'
 import js from '../img/javascript.svg'
 import adobe from '../img/adobecreativecloud.svg'
-import teamwork from '../img/teamwork.svg'
+import css from '../img/css3.svg'
+import html from '../img/html5.svg'
 import react from '../img/react.svg'
 import node from '../img/node-dot-js.svg'
-import Home2 from '../img/home2.png'
+import bill from '../img/bill.jpg'
 import styled from 'styled-components'
 //styles
 import { About, Description, Hide, Image } from "../styles"
@@ -17,40 +18,48 @@ const SkillsSection = () => {
     return(
         <Services variants={fade} animate={controls} initial="hidden" ref={element}>
             <Description>
-                <h2>Few<span>skills</span>of mine</h2>
+                <h2><span>Frameworks</span>and<span>Languages</span></h2>
+                
                 <Cards>
                     <Card>
                         <div className="icon">
                             <img src={react} alt="clock"/>
                             <h3>React</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>For Developing Applications</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={node} alt="teamwork"/>
                             <h3>NodeJS</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>For Databases</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={js} alt="dia" style={{color: 'red'}}/>
+                            <img src={js} alt="dia"/>
                             <h3>JavaScript</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>For the funtional part of the Application</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={adobe} alt="money"/>
-                            <h3>Affordable</h3>
+                            <img src={html} alt="money"/>
+                            <h3>HTML</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Structuring the websites</p>
+                    </Card>
+                    <Card>
+                        <div className="icon">
+                            <img src={css} alt="clock"/>
+                            <h3>CSS:3</h3>
+                        </div>
+                        <p>Styling the websites</p>
                     </Card>
                 </Cards>
             </Description>
             <Image>
-                <img src={Home2} alt="camera"/>
+                <img src={bill} alt="camera"/>
             </Image>
         </Services>
     )

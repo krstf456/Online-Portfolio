@@ -34,7 +34,7 @@ const AboutSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>Contact me for more information</motion.p>
-                <motion.button variants={fade}>Contact me</motion.button>
+                <a href="mailto:kristof.vorosvaczki@medieinstitutet.com"><motion.button variants={fade} >Contact me</motion.button></a>
             </Description>
             <Image>
                 <motion.img variants={photoAnim}  src={Me} alt="cameraman"></motion.img>
