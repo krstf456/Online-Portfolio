@@ -15,7 +15,7 @@ export const MovieState = () => {
         {
           title: "The hungarian food webshop.",
           description:
-            "This project is inprogress right now. You can check the physical shop in Gothenburg if you are interested in the taste of Hungarian food. Adress: Gustaf Dalénsgatan 30 417 24 Göteborg ",
+            "This project is in progress right now. You can check the physical shop in Gothenburg if you are interested in the taste of Hungarian food. Adress: Gustaf Dalénsgatan 30 417 24 Göteborg ",
         },
         {
           title: "Final project.",

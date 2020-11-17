@@ -40,7 +40,7 @@ const FaqSection = () => {
                 
                     
                     <div className="answer">
-                        <p>Hungarian is my mother tongue, beside that I speak fluent Swedish and English.</p>
+                        <p>Hungarian is my mother tongue, beside that I speak fluent Swedish and English. </p>
                         
                     </div>
 
@@ -51,7 +51,7 @@ const FaqSection = () => {
               
                     
                     <div className="answer">
-                        <p>I like to do different sports depending on the season, such as ride mountainbike or ride snowboard. Tennis is the all season sport for me.</p>
+                        <p>I like to do different sports depending on the season, such as ride my mountainbike or ride my snowboard. Tennis is the all season sport for me.</p>
                         <p>Beside these activities I like to travel and I'm a big animal lover.</p>
                         
                     </div>
