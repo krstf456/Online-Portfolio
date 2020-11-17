@@ -1,4 +1,3 @@
-import Home1 from '../img/home1.png'
 import Me from '../img/meimg.JPG'
 import { About, Description, Image, Hide } from '../styles'
 import { Link } from 'react-router-dom'
