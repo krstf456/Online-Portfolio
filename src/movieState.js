@@ -20,7 +20,7 @@ export const MovieState = () => {
         {
           title: "Final project.",
           description:
-            "This is gonna be my final project for the school. Planned release date is around december.",
+            "This is going to be my final project for the school. Planned release date is around december.",
         },
         
       ],
