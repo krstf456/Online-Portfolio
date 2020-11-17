@@ -19,7 +19,7 @@ const FaqSection = () => {
                     
                     <div className="answer">
                         <p>My name is Kristóf Vörösváczki.</p>
-                        <p>Im coming from Hungary, but I lived in Sweden in the past 7 years.</p>
+                        <p>I’m coming from Hungary, but I have lived in Sweden for 7 years.</p>
                     </div>
 
                 
@@ -40,7 +40,7 @@ const FaqSection = () => {
                 
                     
                     <div className="answer">
-                        <p>Hungarian is my mother language, beside that I speak fluent Swedish and English.</p>
+                        <p>Hungarian is my mother tongue, beside that I speak fluent Swedish and English.</p>
                         
                     </div>
 
