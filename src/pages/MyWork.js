@@ -82,8 +82,9 @@ const Movie = styled(motion.div)`
     }
     img{
         width: 100%;
-        height: 85vh;
+        height: 100%;
         object-fit: cover;
+        
     }
 `
 

@@ -24,7 +24,7 @@ const MovieDetail = () => {
             <Details  variants={pageAnimation} initial="hidden" animate="show" exit="exit">
                 <Headline>
                     <h2>{movie.title}</h2>
-                    <img src={movie.mainImg} alt="kep"/>
+                    <img src={movie.mainImg} alt="picture"/>
                 </Headline>
                 <Awards>
                     {movie.awards.map((award) => (
@@ -32,7 +32,7 @@ const MovieDetail = () => {
                     ))}
                 </Awards>
                 <ImageDisplay>
-                    <img src={movie.secondaryImg} alt=""/>
+                    <img src={movie.secondaryImg} alt="picture two"/>
                 </ImageDisplay>
             </Details>
         )}
@@ -56,7 +56,7 @@ const Headline = styled.div`
     }
     img{
         width: 100%;
-        height: 102vh;
+        height: 100%;
         margin-top: 1rem;
         object-fit: cover;
     }
