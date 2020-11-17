@@ -7,7 +7,7 @@ const Nav = () => {
     const { pathname } = useLocation()
     return(
         <StyledNav>
-            <h1><a id="logo" to="/">Portfolio</a></h1>
+            <h1><Link id="logo" to="/">Portfolio</Link></h1>
             <ul>
                 <li>
                     <Link to="/">1. About me</Link>
