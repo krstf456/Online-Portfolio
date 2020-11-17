@@ -12,12 +12,13 @@ const ContactMe = () => {
                 </Hide>
             </Title>
             <div>
+                
                 <Hide>
 
                 <Social variants={titleAnim}>
 
                     <Circle/>
-                    <h2>Send Me A Message</h2>
+                    <a href="mailto:kristof.vorosvaczki@medieinstitutet.se"><h2>Send Me An Email</h2></a>
                 </Social>
                 </Hide>
                 <Hide>
@@ -25,15 +26,7 @@ const ContactMe = () => {
                 <Social variants={titleAnim}>
 
                     <Circle/>
-                    <h2>Send Me An Email</h2>
-                </Social>
-                </Hide>
-                <Hide>
-
-                <Social variants={titleAnim}>
-
-                    <Circle/>
-                    <h2>Call me</h2>
+                    <h2>Call me +46707572972</h2>
                 </Social>
                 </Hide>
 
@@ -74,6 +67,10 @@ const Social = styled(motion.div)`
     align-items: center;
     h2{
         margin: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: #353535;
     }
 `
 export default ContactMe

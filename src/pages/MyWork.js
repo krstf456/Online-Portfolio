@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import athlete from '../img/athlete-small.png'
 import theracer from '../img/theracer-small.png'
 import goodtimes from '../img/goodtimes-small.png'
-
+import hstore from '../img/mainhstore.png'
 import {motion} from 'framer-motion'
 import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from '../animation'
 import {useScroll} from '../components/useScroll'
@@ -24,37 +24,38 @@ const MyWork = () => {
             </motion.div>
 
             <Movie>
-                <motion.h2 variants={fade}>The Athlete</motion.h2>
+                <motion.h2 variants={fade}>H-Store</motion.h2>
                 <motion.div variants={lineAnim} className="line">
 
                 </motion.div>
-                <Link to="/work/the-athlete">
+                <Link to="/work/h-store">
                     <Hide>
-                    <motion.img variants={photoAnim}src={athlete} alt="athlete"/>
+                    <motion.img variants={photoAnim} src={hstore} alt="athlete"/>
                     </Hide>
                 </Link>
             
             </Movie>
-            <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-                <motion.h2  variants={fade}>The Racer</motion.h2>
+            {/* <Movie ref={element} variants={fade} animate={controls} initial="hidden">
+                <motion.h2  variants={fade}></motion.h2>
                 <motion.div variants={lineAnim} className="line">
 
                 </motion.div>
-                <Link to="/work/the-racer">
-                    <img src={theracer} alt="athlete"/>
+                <Link to="/work/">
+                    <img src={} alt=""/>
                 </Link>
             
-            </Movie>
-            <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
-                <motion.h2 variant={fade}>Good Times</motion.h2>
+            </Movie> */}
+            {/* <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
+                <motion.h2 variant={fade}></motion.h2>
                 <motion.div variants={lineAnim} className="line">
 
                 </motion.div>
-                <Link to="/work/good-times">
-                    <img src={goodtimes} alt="athlete"/>
+                <Link to="/work/">
+                    <img src={} alt=""/>
                 </Link>
             
-            </Movie>
+            </Movie> */}
+            
             <ScrollTop/>
         </Work>
     )
@@ -81,7 +82,7 @@ const Movie = styled(motion.div)`
     }
     img{
         width: 100%;
-        height: 70vh;
+        height: 85vh;
         object-fit: cover;
     }
 `

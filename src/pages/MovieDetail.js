@@ -51,11 +51,13 @@ const Headline = styled.div`
         position: absolute;
         top: 10%;
         left: 50%;
+        
         transform: translate(-50%, -10%)
     }
     img{
         width: 100%;
-        height: 70vh;
+        height: 102vh;
+        margin-top: 1rem;
         object-fit: cover;
     }
 `

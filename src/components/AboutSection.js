@@ -1,6 +1,7 @@
 import Home1 from '../img/home1.png'
 import Me from '../img/meimg.JPG'
 import { About, Description, Image, Hide } from '../styles'
+import { Link } from 'react-router-dom'
 
 //framer motion
 
@@ -34,7 +35,7 @@ const AboutSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>Contact me for more information</motion.p>
-                <a href="mailto:kristof.vorosvaczki@medieinstitutet.com"><motion.button variants={fade} >Contact me</motion.button></a>
+                <Link to='/contact'><motion.button variants={fade} >Contact me</motion.button></Link>
             </Description>
             <Image>
                 <motion.img variants={photoAnim}  src={Me} alt="cameraman"></motion.img>
