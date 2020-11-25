@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 //images
 
 import hstore from '../img/mainhstore.png'
+import lpstore from '../img/lpstore.png'
+import bpong from '../img/bpong.png'
 import {motion} from 'framer-motion'
 import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from '../animation'
 import {useScroll} from '../components/useScroll'
 import ScrollTop from '../components/ScrollTop'
 
 const MyWork = () => {
-    // const [element, controls] = useScroll()
-    // const [element2, controls2] = useScroll()
+    const [element, controls] = useScroll()
+    const [element2, controls2] = useScroll()
     return(
         <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{background: '#fff'}}>
             <motion.div variants={sliderContainer}>
@@ -33,26 +35,26 @@ const MyWork = () => {
                 </Link>
             
             </Movie>
-            {/* <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-                <motion.h2  variants={fade}></motion.h2>
+            <Movie ref={element} variants={fade} animate={controls} initial="hidden">
+                <motion.h2  variants={fade}>Love Peace & Records</motion.h2>
                 <motion.div variants={lineAnim} className="line">
 
                 </motion.div>
-                <Link to="/work/">
-                    <img src={} alt=""/>
+                <Link to="/work/lp-shop">
+                    <img src={lpstore} alt="lp webshop"/>
                 </Link>
             
-            </Movie> */}
-            {/* <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
-                <motion.h2 variant={fade}></motion.h2>
+            </Movie>
+            <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
+                <motion.h2 variant={fade}>Battle-Pong</motion.h2>
                 <motion.div variants={lineAnim} className="line">
 
                 </motion.div>
-                <Link to="/work/">
-                    <img src={} alt=""/>
+                <Link to="/work/battle-pong">
+                    <img src={bpong} alt="battle pong"/>
                 </Link>
             
-            </Movie> */}
+            </Movie>
             
             <ScrollTop/>
         </Work>
