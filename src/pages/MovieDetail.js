@@ -7,6 +7,7 @@ import { ProjectState } from '../movieState'
 import {motion} from 'framer-motion'
 import {pageAnimation} from '../animation'
 
+
 const MovieDetail = () => {
     const history = useHistory()
     const url = history.location.pathname
